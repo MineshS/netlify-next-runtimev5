@@ -36,8 +36,5 @@
     "typescript": "^5.3.3",
     "uuid": "^9.0.1",
     "undici": "^5.28.3"
-  },
-  "dependencies": {
-    "netlify-cli": "^17.19.5"
   }
 }
