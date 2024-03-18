@@ -44,13 +44,11 @@ export class ContentGraphClient extends GraphQLClient {
         return getAuthMode(this._token);
     }
     constructor(config, token = undefined) {
-        console.log(readEnvironmentVariables())
         // Validate inputs
         const optiConfig = applyConfigDefaults(config ?? readEnvironmentVariables());
         if (!validateToken(token))
             throw new Error("Invalid ContentGraph token");
         const authMode = getAuthMode(token);
-        console.log(authMode)
         if (!validateConfig(optiConfig, authMode == AuthMode.Public || authMode == AuthMode.Token))
             throw new Error("Invalid ContentGraph configuration - constructor");
         // Create instance
