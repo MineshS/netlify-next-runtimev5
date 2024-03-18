@@ -19,7 +19,7 @@ async function handler(req: NextRequest) : Promise<NextResponse<ConsentResponse>
 }
 
 export const GET = handler
-export const runtime = 'edge' // 'nodejs' (default) | 'edge'
+//export const runtime = 'edge' // 'nodejs' (default) | 'edge'
 export const dynamic = 'force-dynamic'
 export const dynamicParams = true
 export const fetchCache = 'default-no-store'
