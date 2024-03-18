@@ -1,8 +1,7 @@
 [build]
-  command = "yarn workspace frontend build"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  command = "yarn run build"
+  #functions = "netlify/functions"
+  publish = "apps/frontend/.next"
 
 # Global environment variables (available in all contexts)
 [build.environment]
