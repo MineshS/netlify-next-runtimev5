@@ -10,7 +10,7 @@ export function createClient(config, token = undefined, configOverrides = undefi
     const forPublishedOnly = !(typeof token == 'string' && (token.length > 16 || token == USE_HMAC_TOKEN));
     const optiConfig = config ?? getContentGraphConfig();
     if (!validateContentGraphConfig(optiConfig, forPublishedOnly))
-        throw new Error("Invalid ContentGraph configuration");
+        throw new Error("Invalid ContentGraph configuration - function createClient");
     const sendRequest = forPublishedOnly ?
         createHttpLink({
             uri: new URL("/content/v2", optiConfig.gateway).href,

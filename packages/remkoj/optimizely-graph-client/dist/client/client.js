@@ -50,7 +50,7 @@ export class ContentGraphClient extends GraphQLClient {
             throw new Error("Invalid ContentGraph token");
         const authMode = getAuthMode(token);
         if (!validateConfig(optiConfig, authMode == AuthMode.Public || authMode == AuthMode.Token))
-            throw new Error("Invalid ContentGraph configuration");
+            throw new Error("Invalid ContentGraph configuration - constructor");
         // Create instance
         const QUERY_LOG = optiConfig.query_log ?? false;
         const serviceUrl = new URL("/content/v2", optiConfig.gateway).href;
