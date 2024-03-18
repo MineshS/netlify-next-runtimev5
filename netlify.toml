@@ -1,0 +1,21 @@
+[build]
+  command = "yarn workspace frontend build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Global environment variables (available in all contexts)
+[build.environment]
+  # Add global environment variables here
+  DXP_URL = "https://app-ocxcmish122w0uprod.cms.optimizely.com/"
+  SITE_DOMAIN = "netlify-next-runtimev5.netlify.app"
+  OPTIMIZELY_CONTENTGRAPH_SECRET = "kxGv/PZ84FRll/ro9pVJgos8goZkMVPpOvoGq5UqSX3oCmol4bELFaFTwdgCy+t9"
+  OPTIMIZELY_CONTENTGRAPH_APP_KEY = "nqrGFlTEoNs4XXGscBHvDHlMWZ3BQapgMUeAyZMCpLxJokjE"
+  OPTIMIZELY_CONTENTGRAPH_SINGLE_KEY = "ezKe4JSOjtilFKfhfOJnGeeUslzNFLAAg4eMZzahJyYbnDgz"
+  OPTIMIZELY_CONTENTGRAPH_GATEWAY = "https://cg.optimizely.com"
+  OPTIMIZELY_CONTENTGRAPH_UPDATE_DELAY = "2000"
+  NEXTAUTH_URL = "https://netlify-next-runtimev5.netlify.app"
+  NEXTAUTH_SECRET = "SECRET-netlify-next-runtimev5.netlify.app-https://app-ocxcmish122w0uprod.cms.optimizely.com/-production"
+  DXP_DEBUG = "0"
+  QUERY_LOG = "0"
+  FRONTEND_PUBLISH_TOKEN = "optly-PUBLISH_TOKEN"

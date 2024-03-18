@@ -1,0 +1,2 @@
+# Optimizely GraphQL Codegen Plugin
+GraphQL Codegen plugin to dynamically build functions that load the correct fields for each content item on a generic lookup. Used for the "getContentByPath" and "getContentById" methods of the sample site.
