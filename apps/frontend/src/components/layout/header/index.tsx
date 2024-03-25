@@ -40,7 +40,6 @@ export default async function SiteHeader({ locale }: SiteHeaderProps)
         <div className='bg-stripe'>
             <div className='max-w-screen-2xl mx-auto py-3 px-4 sm:px-6 lg:px-8 flex justify-end content-stretch'>
                 <Notice text={ config?.PromoText ?? "" } className='truncate' />
-                <LanguagePicker locales={ siteInfo.locales } locale={ currentLocale } className='ml-auto' texts={ strings.picker } />
             </div>
         </div>
         <div className='max-w-screen-2xl mx-auto p-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between content-stretch'>
