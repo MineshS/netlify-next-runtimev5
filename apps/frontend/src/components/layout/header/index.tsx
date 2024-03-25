@@ -44,7 +44,6 @@ export default async function SiteHeader({ locale }: SiteHeaderProps)
         </div>
         <div className='max-w-screen-2xl mx-auto p-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between content-stretch'>
             <BrandLogo brandName={siteName} href={config?.SiteLogo} locale={ locale } className="order-first aspect-[5/1] basis-1/2" />
-            <LoginButton texts={ strings.login } />
         </div>
         <div className='bg-primary text-default-onPrimary w-full'>
             <Menu items={ menuItems } brandName={ siteName } locale={ currentLocale } />
